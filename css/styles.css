@@ -1,0 +1,183 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: #F0F1F7;
+   text-align: center;
+   color: darkslateblue;
+   font-size: 24px;
+}
+
+h1 {
+   padding: 1rem;
+}
+
+form {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-bottom: 2rem;
+}
+
+input {
+   font-size: 1.5rem;
+}
+
+button {
+   background-color: #F0F1F7;
+   color: darkslateblue;
+   font-size: 0.75rem;
+   margin-left: 1rem;
+   border: 0px none;
+}
+
+button:hover {
+   text-shadow: 1px 1px 5px antiquewhite;
+}
+
+#results-div {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 40%;
+   margin: auto;
+}
+
+#overview {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+}
+
+#ovierview-text {
+   display: flex;
+   flex-direction: row;
+}
+
+th[scope=row] {
+   font-weight: normal;
+   text-align: left;
+   padding-right: 2rem;
+}
+
+td {
+   font-weight: bolder;
+}
+
+#pokemon-name {
+   text-transform: capitalize;
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+.hidden {
+   visibility: hidden;
+}
+
+.type {
+   padding: 0 0.5rem;
+   margin: auto 0.5rem;
+   text-transform: uppercase;
+   font-size: 0.75rem;
+   color: #F0F1F7;
+}
+
+.type.normal {
+   background-color: #A8A77A;
+}
+
+.type.fire {
+   background-color: #EE8130;
+}
+
+.type.water {
+   background-color: #6390F0;
+}
+
+.type.electric {
+   background-color: #F7D02C;
+}
+
+.type.grass {
+   background-color: #7AC74C;
+}
+
+.type.ice {
+   background-color: #96D9D6;
+}
+
+.type.fighting {
+   background-color: #C22E28;
+}
+
+.type.poison {
+   background-color: #A33EA1;
+}
+
+.type.ground {
+   background-color: #E2BF65;
+}
+
+.type.flying {
+   background-color: #A98FF3;
+}
+
+.type.psychic {
+   background-color: #F95587;
+}
+
+.type.bug {
+   background-color: #A6B91A;
+}
+
+.type.rock {
+   background-color: #B6A136;
+}
+
+.type.ghost {
+   background-color: #735797;
+}
+
+.type.dragon {
+   background-color: #6F35FC;
+}
+
+.type.dark {
+   background-color: #705746;
+}
+
+.type.steel {
+   background-color: #B7B7CE;
+}
+
+.type.fairy {
+   background-color: #D685AD;
+}
+
+@media only screen and (max-width: 720px) {
+   form {
+      margin-bottom: 0.5rem;
+      flex-direction: column;
+      padding: 0.5rem;
+   }
+
+   button {
+      margin: 0.5rem auto;
+   }
+
+   #results-div {
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   #stats {
+      margin-top: 1rem;
+      font-size: 0.75rem;
+   }
+}

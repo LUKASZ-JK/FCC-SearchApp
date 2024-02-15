@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"
+      content="Sample page built during a FreeCodeCamp course that looks up a Pokemon in a database">
+   <link rel="stylesheet" href="css/styles.css">
+   <title>Pokémon Search App</title>
+</head>
+
+<body>
+   <h1>Find a Pokémon</h1>
+   <div class="form">
+      <form>
+         <input id="search-input" type="text" required>
+         <button id="search-button" type="submit">Check</button>
+      </form>
+   </div>
+   <div id="results-div" class="hidden">
+      <div id="overview">
+         <div id="overview-text">
+            <span id="pokemon-name"></span>
+            <span id="pokemon-id"></span>
+         </div>
+         <div id="image"></div>
+         <div id="types"></div>
+      </div>
+      <div id="stats">
+         <table>
+            <thead>
+               <tr>
+                  <th scope="colgroup" colspan="2">
+                     Statistics
+                  </th>
+               </tr>
+            </thead>
+            <tr>
+               <th scope="row">HP</th>
+               <td id="hp"></td>
+            </tr>
+            <tr>
+               <th scope="row">Attack</th>
+               <td id="attack"></td>
+            </tr>
+            <tr>
+               <th scope="row">Defence</th>
+               <td id="defense"></td>
+            </tr>
+            <tr>
+               <th scope="row">Special attack</th>
+               <td id="special-attack"></td>
+            </tr>
+            <tr>
+               <th scope="row">Special defense</th>
+               <td id="special-defense"></td>
+            </tr>
+            <tr>
+               <th scope="row">Speed</th>
+               <td id="speed"></td>
+            </tr>
+            <tr>
+            <tr>
+               <th scope="row">Weight</th>
+               <td id="weight"></td>
+            </tr>
+            </tr>
+            <tr>
+               <th scope="row">Height</th>
+               <td id="height"></td>
+            </tr>
+         </table>
+      </div>
+   </div>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
